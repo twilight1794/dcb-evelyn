@@ -10,19 +10,21 @@
     <link rel="stylesheet" href="estilo.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
-    <!--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#cerrarSesion">Cerrar sesión</a></li>
-          <li><a href="#registro">Registrarse</a></li>
-          <li><a href="#inicioSesion">Iniciar sesión</a></li>
-        </ul>
+        <div class="container">
+          <a href="#" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#cerrarSesion">Cerrar sesión</a></li>
+            <li><a href="#registro">Registrarse</a></li>
+            <li><a href="#inicioSesion">Iniciar sesión</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
     <ul class="sidenav" id="mobile-nav">
@@ -30,25 +32,97 @@
       <li><a href="#registro">Registrarse</a></li>
       <li><a href="#inicioSesion">Iniciar sesión</a></li>
     </ul>
-    <article class="pagina pagina_activa" id="p_inicio">
-      Sistema de videos
-    </article>
-    <article class="pagina" id="p_inicioSesion">
-    </article>
-    <article class="pagina" id="p_registro">
-    </article>
-    <article class="pagina" id="p_perfilAlumno">
-    </article>
-    <article class="pagina" id="p_admin">
-    </article>
-    <article class="pagina" id="p_admin_ajustes">
-    </article>
-    <article class="pagina" id="p_admin_cursos">
-    </article>
-    <article class="pagina" id="p_admin_recursos">
-    </article>
-    <article class="pagina" id="p_admin_avanzado">
-    </article>
+    <div class="container" id="paginas">
+      <article class="pagina pagina_activa" id="p_inicio">
+        Sistema de videos
+      </article>
+      <article class="pagina" id="p_inicioSesion">
+        <h2>Iniciar sesión</h2>
+        <div class="row">
+          <div class="input-field col m6">
+            <input id="inicioSesion_correo" type="text" class="validate" />
+            <label for="inicioSesion_correo">Correo electrónico</label>
+          </div>
+          <div class="input-field col m6">
+            <input id="inicioSesion_contrasena" type="password" class="validate" />
+            <label for="inicioSesion_contrasena">Contraseña</label>
+          </div>
+          <div class="input-field col m3">
+            <a class="waves-effect waves-light btn">Olvidé mi contraseña</a>
+            <a class="waves-effect waves-light btn">Entrar</a>
+          </div>
+        </div>
+      </article>
+      <article class="pagina" id="p_registro">
+        <h2>Registro</h2>
+        <div class="row">
+          <div class="input-field col m6">
+            <input id="registro_nombre" type="text" class="validate" />
+            <label for="registro_nombre">Nombre</label>
+          </div>
+          <div class="input-field col m6">
+            <input id="registro_appat" type="text" class="validate" />
+            <label for="registro_appat">Apellido paterno</label>
+          </div>
+          <div class="input-field col m6">
+            <input id="registro_apmat" type="text" class="validate" />
+            <label for="registro_apmat">Apellido materno</label>
+          </div>
+          <div class="input-field col m6">
+            <input id="registro_correo" type="text" class="validate" />
+            <label for="registro_correo">Correo electrónico</label>
+          </div>
+          <div class="input-field col m6">
+            <input id="registro_contrasena" type="password" class="validate" />
+            <label for="registro_contrasena">Contraseña</label>
+          </div>
+          <div class="input-field col m6">
+            <input id="registro_contrasena_2" type="password" class="validate" />
+            <label for="registro_contrasena_2">Contraseña de nuevo</label>
+          </div>
+          <div class="input-field col m6">
+            <input id="registro_cta" type="text" class="validate" />
+            <label for="registro_cta">Número de cuenta</label>
+          </div>
+          <div class="input-field col m6">
+            <select class="browser-default">
+              <option value="" disabled="disabled" selected="selected">Escoge una opción</option>
+              <option value="1">Ingeniería aeroespacial</option>
+              <option value="2">Ingeniería civil</option>
+              <option value="3">Ingeniería geomática</option>
+              <option value="4">Ingeniería ambiental</option>
+              <option value="5">Ingeniería geofísica</option>
+              <option value="6">Ingeniería geológica</option>
+              <option value="7">Ingeniería petrolera</option>
+              <option value="8">Ingeniería de minas y metalurgia</option>
+              <option value="9">Ingeniería en computación</option>
+              <option value="10">Ingeniería eléctrica-electrónica</option>
+              <option value="11">Ingeniería en telecomunicaciones</option>
+              <option value="12">Ingeniería mecánica</option>
+              <option value="13">Ingeniería industrial</option>
+              <option value="14">Ingeniería mecatrónica</option>
+              <option value="15">Ingeniería en sistemas biomédicos</option>
+            </select>
+            <label>Carrera</label>
+          </div>
+          <div class="input-field col m3">
+            <a class="waves-effect waves-light btn">Registrar</a>
+          </div>
+        </div>
+      </article>
+      <article class="pagina" id="p_perfilAlumno">
+      </article>
+      <article class="pagina" id="p_admin">
+      </article>
+      <article class="pagina" id="p_admin_ajustes">
+      </article>
+      <article class="pagina" id="p_admin_cursos">
+      </article>
+      <article class="pagina" id="p_admin_recursos">
+      </article>
+      <article class="pagina" id="p_admin_avanzado">
+      </article>
+    </div>
     <footer class="page-footer">
       <div class="container">
         <div class="row">

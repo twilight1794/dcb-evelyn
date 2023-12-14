@@ -1,6 +1,7 @@
 :root {
     --p-f: #ff9800; /* orange */
-    --p-s: #ffff8d; /* yellov-accent-1 */
+    --p-s: #ffff8d; /* yellow-accent-1 */
+    --tit: #616161; /* grey-darken-3 */
 }
 
 .nav-wrapper {
@@ -8,6 +9,10 @@
 }
 .page-footer {
     background: var(--p-f);
+
+    & a {
+        color: white;
+    }
 }
 
 body {
@@ -16,9 +21,12 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-.pagina {
-    display: none;
+#paginas {
     flex: 1 0 auto;
+}
+.pagina {
+    margin-block: 40px;
+    display: none;
 }
 .pagina_activa {
     display: block;
@@ -27,9 +35,13 @@ h1 {
     text-align: center;
     font-family: "Agbalumo", sans-serif; 
 }
-h3{
-    /*color:  #212121;*/
-    font-family: "Agbalumo", sans-serif; 
+h2 {
+    font-family: "Roboto Light", sans-serif;
+    color:  var(--tit);
+    text-align: center;
+}
+.btn {
+    background: var(--p-f);
 }
 
 a[href="#cerrarSesion"]{
