@@ -1,0 +1,48 @@
+:root {
+    --p-f: #ff9800; /* orange */
+    --p-s: #ffff8d; /* yellov-accent-1 */
+}
+
+.nav-wrapper {
+    background: var(--p-f);
+}
+.page-footer {
+    background: var(--p-f);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.pagina {
+    display: none;
+    flex: 1 0 auto;
+}
+.pagina_activa {
+    display: block;
+}
+h1 {
+    text-align: center;
+    font-family: "Agbalumo", sans-serif; 
+}
+h3{
+    /*color:  #212121;*/
+    font-family: "Agbalumo", sans-serif; 
+}
+
+a[href="#cerrarSesion"]{
+    display: none;
+}
+
+.sesion_activa a[href="#cerrarSesion"]{
+    display: inline;
+}
+.sesion_activa .sidenav a[href="#cerrarSesion"]{
+    display: block;
+}
+.sesion_activa a[href="#registro"],
+.sesion_activa a[href="#inicioSesion"] {
+    display: none !important;
+}

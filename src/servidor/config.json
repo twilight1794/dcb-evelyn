@@ -1,0 +1,23 @@
+{
+    "basedatos": {
+        "host": "localhost",
+        "nombre": "dcb",
+        "usuario": "dcb",
+        "contrasena": "****"
+    },
+    "archivos": {
+        "directorio": "media"
+    },
+    "correo": {
+        "host": "localhost",
+        "usuario": "dcb",
+        "contrasena": "****",
+        "puerto": 587,
+    },
+    "mensajes": {
+        "bienvenida": "Bienvenido, {{nombre_pila}}",
+        "buena_suerte": "Buena suerte, {{nombre_pila}}"
+    },
+    "frases": [
+    ]
+}
