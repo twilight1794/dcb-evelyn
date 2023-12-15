@@ -32,178 +32,182 @@
       <li><a href="#registro">Registrarse</a></li>
       <li><a href="#inicioSesion">Iniciar sesión</a></li>
     </ul>
-    <div class="container" id="paginas">
-      <article class="pagina pagina_activa" id="p_inicio">
-        <div class="row">
-          <div class="col s12 m6 l3">
-            <div class="card waves-effect waves-block">
-              <div class="card-content">
-                <span class="card-title activator">Estructuras discretas<i class="material-icons right">more_vert</i></span>
-                <p>De Evelyn Salazar</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6 l3">
-            <div class="card waves-effect waves-block">
-              <div class="card-content">
-                <span class="card-title activator">Lenguajes formales<i class="material-icons right">more_vert</i></span>
-                <p>De Evelyn Salazar</p>
-              </div>
+    <article class="pagina pagina_activa container" id="p_inicio">
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <div class="card waves-effect waves-block">
+            <div class="card-content">
+              <span class="card-title activator">Estructuras discretas<i class="material-icons right">more_vert</i></span>
+              <p>De Evelyn Salazar</p>
             </div>
           </div>
         </div>
-      </article>
-      <article class="pagina" id="p_inicioSesion">
-        <h2>Iniciar sesión</h2>
-        <div class="row">
-          <div class="input-field col s12 m6">
-            <input id="inicioSesion_correo" type="text" class="validate" />
-            <label for="inicioSesion_correo">Correo electrónico</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="inicioSesion_contrasena" type="password" class="validate" />
-            <label for="inicioSesion_contrasena">Contraseña</label>
-          </div>
-          <div class="input-field col s12 m3">
-            <a class="waves-effect waves-light btn">Olvidé mi contraseña</a>
-            <a class="waves-effect waves-light btn">Entrar</a>
+        <div class="col s12 m6 l3">
+          <div class="card waves-effect waves-block">
+            <div class="card-content">
+              <span class="card-title activator">Lenguajes formales<i class="material-icons right">more_vert</i></span>
+              <p>De Evelyn Salazar</p>
+            </div>
           </div>
         </div>
-      </article>
-      <article class="pagina" id="p_registro">
-        <h2>Registro</h2>
-        <div class="row">
-          <div class="input-field col s12 m6">
-            <input id="registro_nombre" type="text" class="validate" />
-            <label for="registro_nombre">Nombre</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="registro_appat" type="text" class="validate" />
-            <label for="registro_appat">Apellido paterno</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="registro_apmat" type="text" class="validate" />
-            <label for="registro_apmat">Apellido materno</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="registro_correo" type="email" class="validate" />
-            <label for="registro_correo">Correo electrónico</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="registro_contrasena" type="password" class="validate" />
-            <label for="registro_contrasena">Contraseña</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="registro_contrasena_2" type="password" class="validate" />
-            <label for="registro_contrasena_2">Contraseña de nuevo</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="registro_cta" type="text" class="validate" />
-            <label for="registro_cta">Número de cuenta</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <select>
-              <option value="0" selected="selected">Escoge una opción</option>
-              <option value="1">Ingeniería aeroespacial</option>
-              <option value="2">Ingeniería civil</option>
-              <option value="3">Ingeniería geomática</option>
-              <option value="4">Ingeniería ambiental</option>
-              <option value="5">Ingeniería geofísica</option>
-              <option value="6">Ingeniería geológica</option>
-              <option value="7">Ingeniería petrolera</option>
-              <option value="8">Ingeniería de minas y metalurgia</option>
-              <option value="9">Ingeniería en computación</option>
-              <option value="10">Ingeniería eléctrica-electrónica</option>
-              <option value="11">Ingeniería en telecomunicaciones</option>
-              <option value="12">Ingeniería mecánica</option>
-              <option value="13">Ingeniería industrial</option>
-              <option value="14">Ingeniería mecatrónica</option>
-              <option value="15">Ingeniería en sistemas biomédicos</option>
-            </select>
-            <label>Carrera</label>
-          </div>
-          <div class="input-field col s12 m3">
-            <a class="waves-effect waves-light btn">Registrar</a>
-          </div>
+      </div>
+    </article>
+    <article class="pagina container" id="p_inicioSesion">
+      <h2>Iniciar sesión</h2>
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="inicioSesion_correo" type="text" class="validate" />
+          <label for="inicioSesion_correo">Correo electrónico</label>
         </div>
-      </article>
-      <article class="pagina" id="p_perfil">
-        <h2>Perfil</h2>
-        <div class="row">
-          <div class="col s10 offset-s1 l4 offset-l4" id="perfil_foto">
-            <img src="hola.jpg" alt="" class="circle responsive-img" />
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="perfil_nombre" type="text" class="validate" />
-            <label for="perfil_nombre">Nombre</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="perfil_appat" type="text" class="validate" />
-            <label for="perfil_appat">Apellido paterno</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="perfil_apmat" type="text" class="validate" />
-            <label for="perfil_apmat">Apellido materno</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="perfil_correo" type="email" class="validate" />
-            <label for="perfil_correo">Correo electrónico</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="perfil_contrasena" type="password" class="validate" />
-            <label for="perfil_contrasena">Contraseña</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <input id="perfil_cta" type="text" class="validate" />
-            <label for="perfil_cta">Número de cuenta</label>
-          </div>
-          <div class="input-field col s12 m6">
-            <select>
-              <option value="0" selected="selected">Escoge una opción</option>
-              <option value="1">Ingeniería aeroespacial</option>
-              <option value="2">Ingeniería civil</option>
-              <option value="3">Ingeniería geomática</option>
-              <option value="4">Ingeniería ambiental</option>
-              <option value="5">Ingeniería geofísica</option>
-              <option value="6">Ingeniería geológica</option>
-              <option value="7">Ingeniería petrolera</option>
-              <option value="8">Ingeniería de minas y metalurgia</option>
-              <option value="9">Ingeniería en computación</option>
-              <option value="10">Ingeniería eléctrica-electrónica</option>
-              <option value="11">Ingeniería en telecomunicaciones</option>
-              <option value="12">Ingeniería mecánica</option>
-              <option value="13">Ingeniería industrial</option>
-              <option value="14">Ingeniería mecatrónica</option>
-              <option value="15">Ingeniería en sistemas biomédicos</option>
-            </select>
-            <label>Carrera</label>
-          </div>
-          <div class="input-field col s12">
-            <a class="waves-effect waves-light btn">Actualizar</a>
-          </div>
+        <div class="input-field col s12 m6">
+          <input id="inicioSesion_contrasena" type="password" class="validate" />
+          <label for="inicioSesion_contrasena">Contraseña</label>
         </div>
-      </article>
-      <article class="pagina" id="p_curso">
-      </article>
-      <article class="pagina" id="p_tema_video">
-      </article>
-      <article class="pagina" id="p_tema_diapositiva">
-      </article>
-      <article class="pagina" id="p_tema_extraordinario">
-      </article>
-      <article class="pagina" id="p_encuesta">
-      </article>
-      <article class="pagina" id="p_admin">
-      </article>
-      <article class="pagina" id="p_admin_ajustes">
-      </article>
-      <article class="pagina" id="p_admin_cursos">
-      </article>
-      <article class="pagina" id="p_admin_recursos">
-      </article>
-      <article class="pagina" id="p_admin_avanzado">
-      </article>
-    </div>
+        <div class="input-field col s12 m3">
+          <a class="waves-effect waves-light btn">Olvidé mi contraseña</a>
+          <a class="waves-effect waves-light btn">Entrar</a>
+        </div>
+      </div>
+    </article>
+    <article class="pagina container" id="p_registro">
+      <h2>Registro</h2>
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="registro_nombre" type="text" class="validate" />
+          <label for="registro_nombre">Nombre</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="registro_appat" type="text" class="validate" />
+          <label for="registro_appat">Apellido paterno</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="registro_apmat" type="text" class="validate" />
+          <label for="registro_apmat">Apellido materno</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="registro_correo" type="email" class="validate" />
+          <label for="registro_correo">Correo electrónico</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="registro_contrasena" type="password" class="validate" />
+          <label for="registro_contrasena">Contraseña</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="registro_contrasena_2" type="password" class="validate" />
+          <label for="registro_contrasena_2">Contraseña de nuevo</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="registro_cta" type="text" class="validate" />
+          <label for="registro_cta">Número de cuenta</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <select>
+            <option value="0" selected="selected">Escoge una opción</option>
+            <option value="1">Ingeniería aeroespacial</option>
+            <option value="2">Ingeniería civil</option>
+            <option value="3">Ingeniería geomática</option>
+            <option value="4">Ingeniería ambiental</option>
+            <option value="5">Ingeniería geofísica</option>
+            <option value="6">Ingeniería geológica</option>
+            <option value="7">Ingeniería petrolera</option>
+            <option value="8">Ingeniería de minas y metalurgia</option>
+            <option value="9">Ingeniería en computación</option>
+            <option value="10">Ingeniería eléctrica-electrónica</option>
+            <option value="11">Ingeniería en telecomunicaciones</option>
+            <option value="12">Ingeniería mecánica</option>
+            <option value="13">Ingeniería industrial</option>
+            <option value="14">Ingeniería mecatrónica</option>
+            <option value="15">Ingeniería en sistemas biomédicos</option>
+          </select>
+          <label>Carrera</label>
+        </div>
+        <div class="input-field col s12 m3">
+          <a class="waves-effect waves-light btn">Registrar</a>
+        </div>
+      </div>
+    </article>
+    <article class="pagina container" id="p_perfil">
+      <h2>Perfil</h2>
+      <div class="row">
+        <div class="col s10 offset-s1 l4 offset-l4" id="perfil_foto">
+          <img src="hola.jpg" alt="" class="materialboxed circle responsive-img" />
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="perfil_nombre" type="text" class="validate" />
+          <label for="perfil_nombre">Nombre</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="perfil_appat" type="text" class="validate" />
+          <label for="perfil_appat">Apellido paterno</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="perfil_apmat" type="text" class="validate" />
+          <label for="perfil_apmat">Apellido materno</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="perfil_correo" type="email" class="validate" />
+          <label for="perfil_correo">Correo electrónico</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="perfil_contrasena" type="password" class="validate" />
+          <label for="perfil_contrasena">Contraseña</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="perfil_cta" type="text" class="validate" />
+          <label for="perfil_cta">Número de cuenta</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <select>
+            <option value="0" selected="selected">Escoge una opción</option>
+            <option value="1">Ingeniería aeroespacial</option>
+            <option value="2">Ingeniería civil</option>
+            <option value="3">Ingeniería geomática</option>
+            <option value="4">Ingeniería ambiental</option>
+            <option value="5">Ingeniería geofísica</option>
+            <option value="6">Ingeniería geológica</option>
+            <option value="7">Ingeniería petrolera</option>
+            <option value="8">Ingeniería de minas y metalurgia</option>
+            <option value="9">Ingeniería en computación</option>
+            <option value="10">Ingeniería eléctrica-electrónica</option>
+            <option value="11">Ingeniería en telecomunicaciones</option>
+            <option value="12">Ingeniería mecánica</option>
+            <option value="13">Ingeniería industrial</option>
+            <option value="14">Ingeniería mecatrónica</option>
+            <option value="15">Ingeniería en sistemas biomédicos</option>
+          </select>
+          <label>Carrera</label>
+        </div>
+        <div class="input-field col s12">
+          <a class="waves-effect waves-light btn">Actualizar</a>
+        </div>
+      </div>
+    </article>
+    <article class="pagina container" id="p_curso">
+    </article>
+    <article class="pagina container" id="p_tema_video">
+    </article>
+    <article class="pagina container" id="p_tema_diapositiva">
+    </article>
+    <article class="pagina container" id="p_tema_extraordinario">
+    </article>
+    <article class="pagina container" id="p_encuesta">
+    </article>
+    <article class="pagina container" id="p_admin">
+    </article>
+    <article class="pagina" id="p_admin_ajustes">
+      <h2>Todos los ajustes</h2>
+      <div class="row">
+      </div>
+    </article>
+    <article class="pagina" id="p_admin_cursos">
+      <h2>Lista de cursos</h2>
+    </article>
+    <article class="pagina" id="p_admin_temas">
+      <h2>Lista de temas</h2>
+    </article>
+    <article class="pagina" id="p_admin_recursos">
+      <h2>Lista de recursos</h2>
+    </article>
     <footer class="page-footer">
       <div class="container">
         <div class="row">

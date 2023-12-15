@@ -21,15 +21,13 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-#paginas {
-    flex: 1 0 auto;
-}
 .pagina {
     margin-block: 40px;
     display: none;
 }
 .pagina_activa {
     display: block;
+    flex: 1 0 auto;
 }
 h1 {
     text-align: center;
