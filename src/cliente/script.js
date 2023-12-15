@@ -17,5 +17,5 @@ window.addEventListener("popstate", cambiarPagina);
 document.addEventListener("DOMContentLoaded", function() {
     cambiarPagina();
     M.Sidenav.init(document.getElementById("mobile-nav"));
-    M.FormSelect.init(document.getElementsByTagName("select"));
+    Array.from(document.getElementsByTagName("select")).forEach(e => M.FormSelect.init(e));
 });

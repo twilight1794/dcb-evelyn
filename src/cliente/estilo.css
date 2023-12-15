@@ -43,16 +43,38 @@ h2 {
 .btn {
     background: var(--p-f);
 }
-
-a[href="#cerrarSesion"]{
-    display: none;
+.dropdown-content li > span {
+    color: rgba(0,0,0,0.87);
 }
 
+/*
+.editado label {
+    color: var(--p-f);
+}
+.editado input[type=text] {
+    border-bottom-color: var(--p-f);
+}
+.editado input[type="text"].valid:not(.browser-default),
+.editado input[type=text]:focus:not([readonly]) {
+    border-bottom-color: var(--p-f);
+    box-shadow: 0 1px 0 0 orang;
+}
+.editado input[type=text]:focus:not([readonly]) + label {
+    color: var(--p-fkf);
+}*/
+
+/* Estilos por elemento */
+#perfil_foto {
+    margin-block: 1rem;
+}
+a[href="#cerrarSesion"]{
+    display: none !important;
+}
 .sesion_activa a[href="#cerrarSesion"]{
-    display: inline;
+    display: inline !important;
 }
 .sesion_activa .sidenav a[href="#cerrarSesion"]{
-    display: block;
+    display: block !important;
 }
 .sesion_activa a[href="#registro"],
 .sesion_activa a[href="#inicioSesion"] {
